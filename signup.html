@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp on | TaskSwift</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="icon/new.png">
+</head>
+<body>
+    
+        <header>
+            <h1>TaskSwift <i class="bi bi-tree-fill" style="color: #8CC84b;"></i></h1>
+        </header>
+    
+        <main>
+            <div class="input-user">
+                <div class="wrap">
+                    <div class="uname-login">
+                        <input type="text" name="name" id="signupUsername" placeholder="Register Username" required><br>
+                    </div>
+                    <div class="pw-login">
+                        <input type="password" name="name" id="signupPassword" placeholder="Register Password" required>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-signup" id="signup">
+                <p>Already a user?<a href="login.html"> Log In</a></p>
+            </div>
+        </main>
+
+        <div class="icon-container">
+            <i class="bi bi-clipboard-plus-fill" style="color: #8CC84b;"></i>
+            <i class="bi bi-clipboard-check-fill" style="color: #007144;"></i>
+            <i class="bi bi-clipboard-data-fill" style="color: #8CC84b;"></i>
+      </div>
+      <p id="message"></p>
+
+    <script src="js-item/signup.js"></script>
+</body>
+</html>

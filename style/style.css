@@ -1,0 +1,150 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --background-color: #FFFFFF;
+    --primary-color: #007144;
+    --secondary-color: #8CC84b;
+    --teks--: #000000;
+    --bigger--: 24px;
+    --medium--: 18px;
+    --input--: 16px;
+    --small--: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+header{
+    font-size: var(--bigger--);
+    font-family:'Poppins';
+    color: var(--primary-color);
+}
+
+
+
+main{
+    margin-top: 3%;
+}
+
+.input-user{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 50vh;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 13px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+p{
+    margin-top: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--small--);
+    margin-left: 10px;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #8c8686;
+}
+
+input[type=password]:focus {
+    background-color: #dcd9d9;
+}
+
+input[type=text]:focus {
+    background-color: #dcd9d9;
+}
+
+input[type=submit]{
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    transition: 0.2s;
+    background-color: var(--secondary-color);
+}
+
+.icon-container {
+    display: flex;
+    margin-top: 70vh;
+    animation: moveUpDown 1.5s infinite alternate;
+    position: absolute;
+
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+.icon-container i{
+    font-size: 30px;
+    padding: 30px;
+    color: var(--primary-color);
+}
+
+@media (min-width: 576px){
+    input{
+        width: 70vw;
+    }
+
+    .icon-container{
+        
+        position: absolute;
+    }
+
+}
+
+@media (min-width: 768px){
+    input{
+        width: 50vh;
+    }
+
+
+    
+}
+
+
+
+/* ANIMATION */
+
+header .animate__bounceIn{
+    animation-duration: 2s;
+}
+
+div .uname-login {
+    animation-duration: 3s;
+}
+
+div .pw-login {
+    animation-duration: 4s;
+}
+

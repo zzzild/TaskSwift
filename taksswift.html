@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to TaskSwift sir</title>
+    <link rel="stylesheet" href="style/tasksswift.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="icon/new.png">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="judul">
+                <h1>TaskSwift <i class="bi bi-tree-fill" style="color: #8CC84b; font-size:24px;"></i></h1>
+            </div>
+            <div class="center">
+                <a id="time" class="time"></a>
+            </div>
+            <div class="right">
+                    <a href="#add"><i class="bi bi-plus-lg"></i></a>
+                    <a href="info.html"><i class="bi bi-info-circle"></i></a>
+                    <button class="btn-logout" id="logout">
+                        <i class="bi bi-box-arrow-in-left"></i>
+                    </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="side">
+            <div class="container">
+                <h3 class="container-header head">incomplet</h3>    
+                <div class="list-item" id="incompleted">
+                    
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="container-header head" >complet</h3>
+                <div class="list-item" id="completed">
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="container shadow" id="add-task">
+                <h2 class="container-header" id="add">Add new schedule </h2>
+                <form action="#" class="form" id="form">
+                    <div class="form-group form-title">
+                        <label for="title">Judul</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="title">Date</label>
+                        <input type="date" id="dateTask" name="title" required>
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="title">Description</label>
+                        <textarea name="title" id="desTask" cols="20" rows="3" oninput="limitText(this,20)"></textarea>
+                    </div>
+                    <div class="w-btn">
+                        <input type="submit" value="Reset" name="Submit" class="btn-submit" onclick="reset()">
+                        <input type="submit" value="Submit" name="Submit" class="btn-submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+    </footer>
+    <SCript  src="js-item/main.js">        
+    </SCript>
+</body>
+</html>

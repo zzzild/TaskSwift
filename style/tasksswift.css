@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color: #FFFFFF;
+    --primary-color: #007144;
+    --secondary-color: #8CC84b;
+    --tertiary-color: #4CAF50;
+    --accent-color: #2ECC71;
+    --teks--: #000000;
+    --bigger--: 24px;
+    --medium--: 18px;
+    --input--: 16px;
+    --small--: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+}
+
+.navbar {
+    background: var(--primary-color) ;
+    font-family:'Poppins';
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.839);
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.side{
+    width: 50%;
+}
+
+h3{
+    text-align: center;
+}
+
+.judul h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+i{
+    color: var(--background-color);
+    font-size: var(--bigger--);
+}
+
+
+.center p {
+    margin: 0;
+    font-size: 18px;
+    color: #1DB954; 
+}
+
+.right i {
+    font-size: 24px;
+    transition: font-size 0.5s; 
+    padding: 10px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.right i:hover{
+    color: #007144;
+    transition: 0.5s;
+}
+
+.btn-logout{
+    background-color: #ffffff00;
+    border: none;
+    padding: 0;
+    background-size: contain;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .right i {
+        font-size: var(--bigger--);
+        font-weight: bold;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    .center a{
+        display: none;
+    }
+
+}
+
+.time{
+    font-family:cursive;
+}
+
+.container-header{
+    font-family: 'Poppins', sans-serif;   
+    color: var(--primary-color);
+    margin-left: 3vh;
+}
+
+#add{
+    color: #fff;
+    text-align: center;
+}
+
+
+.item{
+    border-radius: 16px;
+    font-family: 'Poppins';
+    border: 2px solid var(--primary-color);
+    margin: 16px;
+    padding: 1px 15px 1px 15px;
+    background:var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: flex-start;
+}
+
+.item > .inner h2{
+    margin-bottom: unset;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+.inner h4{
+    font-size: 15px;
+    color: #dcd9d9;
+}
+
+.inner h5{
+    color: #000000;
+    font-size: 12px;
+}
+
+.check-button{
+    background-color: var(--tertiary-color);
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+
+.check-button:hover{
+    background-size: contain;
+}
+
+i{
+    font-size: 28px;
+    padding-left: 10px;
+    font-weight: bolder;
+    color:  rgb(172, 227, 168);
+}
+
+i:hover{
+    color: var(--secondary-color);
+}
+
+.trash-button{
+    background-color: var(--tertiary-color);
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover{
+    background-size: contain;
+}
+
+.undo-button{
+    background-size: contain;
+    background-color: var(--tertiary-color);
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background-size: contain;
+}
+
+.check-button, .trash-button{
+    outline: none;   
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+.wrapper .container{
+    width: 800px;
+    border-radius: 8px;
+    margin: 65px 16px 16px 16px;
+    background: var(--tertiary-color);
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(19, 3, 3, 0.842);
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(25, 25, 27, 0.05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.plus {
+    color: var(--primary-color);
+}
+
+.form{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 400px;
+    border-radius: 16px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    margin-bottom: 4px;   
+    font-size: var(--medium--);
+    font-weight: lighter;
+    font-family: 'Poppins';
+}
+
+input[type=text], input[type=date], textarea{
+    font-family: 'Poppins', sans-serif;   
+    background-color: #dcd9d9;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: var(--input--);
+}
+
+input:hover{
+    background-color: rgb(172, 227, 168);  
+}
+
+
+
+input[type=text]:focus{
+    background-color: rgb(172, 227, 168);  
+}
+
+input[type=date]:focus{
+    background-color: rgb(172, 227, 168);
+}
+
+textarea:focus{
+    background-color: #dcd9d9;
+    color: var(--teks--);
+    outline: none;
+}
+
+
+.des{
+    box-sizing: border-box;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+.w-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+    padding: 12px 24px;
+    border: 2px solid var(--primary-color);
+    color: #ffff;
+    font-size: var(--medium--);
+    margin-top: 50px;
+    align-self: flex-end;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    box-shadow: 0 6px 8px rgba(19, 3, 3, 0.842);;
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    transition: 0.5s;   
+    box-shadow: 0 2px 4px rgba(234, 229, 229, 0.842);;
+    color: #000000;
+}
+
+input[type=text], input[type=date]{
+    outline: none;
+}
+
+.form-title{
+    margin: auto 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+
+    }
+
+    .side{
+        width: 100%;
+    }
+
+    h3{
+        text-align: left;
+    }
+
+    main{
+        display: block;
+    }
+
+    .wrapper{
+        height: 0;
+    }
+
+    .wrapper .container {
+        width: 70%;
+    }
+
+    input[type=text], input[type=date], textarea{
+        height: 50%;
+        margin-bottom: 4px;
+    }
+
+    .list-item {
+        width: 100%;
+    }
+
+    .btn-submit {
+        font-size: var(--small--);
+        margin-top: 0px;
+    }
+
+    .form {
+        width: 100%;
+        height: 400px;
+ 
+    }
+}

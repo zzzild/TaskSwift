@@ -1,0 +1,33 @@
+*, body,html{
+    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading {
+    display: flex;
+}
+
+
+i{
+    font-size: 36px;
+    color: #8CC84b;
+    padding: 2vh;
+}
+
+.pt-2{
+    color: #007144;
+}
+
+@media (max-width: 410px){
+    i{
+        padding: 1vh;
+    }
+}
