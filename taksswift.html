@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to TaskSwift sir</title>
-    <link rel="stylesheet" href="style/tasksswift.css">
+    <link rel="stylesheet" href="style/taskswift.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="icon/new.png">
+
 </head>
 <body>
     
@@ -22,13 +23,27 @@
             </div>
             <div class="right">
                     <a href="#add"><i class="bi bi-plus-lg"></i></a>
-                    <a href="info.html"><i class="bi bi-info-circle"></i></a>
+                    <button type="submit" class="btnPopUp" onclick="openPopup()"><i class="bi bi-info-circle"></i></button>
                     <button class="btn-logout" id="logout">
                         <i class="bi bi-box-arrow-in-left"></i>
                     </button>
             </div>
         </nav>
     </header>
+
+    <section> 
+            <div class="popup" id="popup">
+                <img src="icon/THEME-1_information.webp" alt="">
+                <h2>Thank you!</h2>
+                <p>I extend my heartfelt gratitude for choosing to explore my website!</p>
+                <div class="sosmed">
+                    <p style="font-family:'Poppins';">Your support means the world to me</p>
+                    <a href="https://www.instagram.com/a.zild?igsh=MThjc296eW51Nm9tMw=="><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/zzzild"><i class="bi bi-github"></i></a>
+                </div>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+    </section>
 
     <main>
         <div class="side">
@@ -60,7 +75,7 @@
                     </div>
                     <div class="form-group form-title">
                         <label for="title">Description</label>
-                        <textarea name="title" id="desTask" cols="20" rows="3" oninput="limitText(this,20)"></textarea>
+                        <textarea name="title" id="desTask" cols="20" rows="3" oninput="limitText(this,30)"></textarea>
                     </div>
                     <div class="w-btn">
                         <input type="submit" value="Reset" name="Submit" class="btn-submit" onclick="reset()">

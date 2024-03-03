@@ -91,6 +91,7 @@ document.addEventListener(RENDER_EVENT, function(){
     }
 });
 
+// DOM add new schedule
 function makeTask(taskObject){
     const textTitle = document.createElement('h2')
     textTitle.innerText = taskObject.title;
@@ -182,6 +183,7 @@ function findTask(taskid){
     return null;
 }
 
+// remove button program
 function removeTaskFromCompleted(taskId){
     const taskTarget = findTaskIndex(taskId);
 
@@ -192,6 +194,7 @@ function removeTaskFromCompleted(taskId){
     saveData();
 }
 
+// undo button program
 function undoTaskFromCompleted(taskId){
     const taskTarget = findTask(taskId);
 
@@ -218,6 +221,7 @@ function saveData(){
     }
 }
 
+// get item and acces local storage
 const SAVED_EVENT = 'saved-task';
 const STORAGE_KEY = 'TASK_SWIFT';
 
@@ -241,6 +245,7 @@ function loadDataFromStorage(){
     document.dispatchEvent(new Event(RENDER_EVENT));
 };
 
+// Reset button program
 function reset(){
     const titleTask = document.getElementById('title');
     const dateTask = document.getElementById('dateTask');
@@ -255,4 +260,15 @@ function limitText(element, maxLength){
     if (element.value.length > maxLength){
         element.value = element.value.slice(0, maxLength);   
     }
+}
+
+// Pop Up
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup")
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup")
 }
